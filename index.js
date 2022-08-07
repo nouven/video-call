@@ -13,6 +13,9 @@ const io = new Server(server, {
 })
 
 
+app.get('/', (req, res) => {
+  res.json("successfully!!")
+})
 
 let userOnls = [];
 io.on('connection', socket => {
